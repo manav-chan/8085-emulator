@@ -43,3 +43,6 @@ make
 ## Examples
 - Program to swap numbers at 2 different memory locations.
 <img align="left" src="https://github.com/user-attachments/assets/4ad532bd-754a-4757-964c-45370be4e044">
+- Program to find the greatest of 2 numbers (Result in 3050).
+<img align="left" src="https://github.com/user-attachments/assets/e912e641-de7a-4d84-b3c5-1f7831460ecf">
+
