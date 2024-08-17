@@ -78,6 +78,10 @@ class CPU
             int countLine = 0;
             while(getline(fin, instr))
             {
+                if(instr.find('/') == 0) {
+                    continue;
+                }
+                
                 countLine ++;
                 instr = trim(instr); // remove trailing spaces
                 if(!isValidInstruction(instr, memory, main_end)) // check for valid instruction and updates memory if valid

@@ -29,7 +29,7 @@ bool isValidAddress(string adr) // checks if an address is a valid address
 
 bool isValidOpcode(string opcode)
 {
-    vector<string> instructions = {"MOV", "MVI", "LXI", "LDA", "STA", "LHLD", "SHLD", "STAX", "LDAX", "XCHG", "ADD", "ADI", "ADC", "SUB", "INR", "DCR", "INX", "DCX", "DAD", "SUI", "CMA", "CMP", "CPI", "JMP", "JC", "JNZ", "SET", "HLT"};
+    vector<string> instructions = {"MOV", "MVI", "LXI", "LDA", "STA", "LHLD", "SHLD", "STAX", "LDAX", "XCHG", "ADD", "ADI", "ADC", "SUB", "INR", "DCR", "INX", "DCX", "DAD", "SUI", "CMA", "CMP", "CPI", "JMP", "JC", "JNC", "JNZ", "SET", "HLT"};
 
     for(auto i: instructions)
     {
