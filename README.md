@@ -39,3 +39,8 @@ make
 ```terminal
 ./build/emulator
 ```
+
+## Examples
+- Program to swap numbers at 2 different memory locations.
+![image](https://github.com/user-attachments/assets/d8a95acd-ae69-43e6-b7a7-9318e63f934a)
+
