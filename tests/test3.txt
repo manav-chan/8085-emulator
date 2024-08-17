@@ -1,3 +1,4 @@
+// Find greater of 2 8-bit numbers.
 SET 2050 F6
 SET 2051 1A
 LDA 2050
