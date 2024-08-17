@@ -52,7 +52,7 @@ class CPU
         {
             string main_end = pc;
             string instr;
-            cout << main_end << " ";
+            cout << endl<<MAGENTA<<main_end << " "<<RESET;
             while(getline(cin, instr))
             {
                 if(instr == "STOP")
@@ -62,9 +62,9 @@ class CPU
                 {
                     cout<<RED<<"\nPlease enter a valid instruction\n"<<RESET;
                 }
-                cout << main_end <<" ";
+                cout << MAGENTA<<main_end <<" "<<RESET;
             }
-            cout<<GREEN<<"\nTyped Successfully!\n"<<RESET;
+            cout<<GREEN<<"\nTyped Successfully!\n\n"<<RESET;
             return main_end;
         }
 
@@ -230,9 +230,9 @@ class CPU
                 inProgMem = false;
 
                 if(inProgMem) // program memory
-                programMemory += x.first + " : " + x.second + "\n";
+                programMemory += MAGENTA + x.first + RESET + " : " + x.second + "\n";
                 else // other memory
-                otherMemory += x.first + " : " + x.second + "\n";
+                otherMemory += MAGENTA + x.first + RESET + " : " + x.second + "\n";
             }
             cout<<endl<<CYAN<<"----Program Memory----\n\n"<<RESET;
             cout<<programMemory<<endl;
