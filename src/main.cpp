@@ -81,7 +81,7 @@ class CPU
                 if(instr.find('/') == 0) {
                     continue;
                 }
-                
+
                 countLine ++;
                 instr = trim(instr); // remove trailing spaces
                 if(!isValidInstruction(instr, memory, main_end)) // check for valid instruction and updates memory if valid
@@ -142,6 +142,11 @@ class CPU
                 }
                 else if(find(branching_instr.begin(), branching_instr.end(), opcode) != branching_instr.end())
                 {
+                    // for(auto x: memory)
+                    // {
+                    //     cout<<x.first<<" : "<<x.second<<endl;
+                    // }
+                    // exit(0);
                     executeBranchingInstr(opcode, operand, flag, memory, pc);
                 }
             }

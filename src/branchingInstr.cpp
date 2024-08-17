@@ -21,6 +21,8 @@ void jumpCarry(string operand, vector<bool> &flag, string &pc)
     else
     {
         pc = incrementProgramCounter(pc);
+        pc = incrementProgramCounter(pc);
+        pc = incrementProgramCounter(pc);
     }
 }
 
@@ -32,6 +34,8 @@ void jumpNotCarry(string operand, vector<bool> &flag, string &pc)
     }
     else
     {
+        pc = incrementProgramCounter(pc);
+        pc = incrementProgramCounter(pc);
         pc = incrementProgramCounter(pc);
     }
 }
@@ -45,6 +49,8 @@ void jumpZero(string operand, vector<bool> &flag, string &pc)
     else
     {
         pc = incrementProgramCounter(pc);
+        pc = incrementProgramCounter(pc);
+        pc = incrementProgramCounter(pc);
     }
 }
 
@@ -57,35 +63,35 @@ void jumpNotZero(string operand, vector<bool> &flag, string &pc)
     else
     {
         pc = incrementProgramCounter(pc);
+        pc = incrementProgramCounter(pc);
+        pc = incrementProgramCounter(pc);
     }
 }
 
 void executeBranchingInstr(string opcode, string operand, vector<bool> &flag, map<string, string> &memory, string &pc)
 {
     auto idx = find(branching_instr.begin(), branching_instr.end(), opcode);
+    string temp_pc = incrementProgramCounter(pc);
+    operand = memory[incrementProgramCounter(temp_pc)] + memory[temp_pc];
+
     if(*idx == "JMP")
     {
-        operand = memory[incrementProgramCounter(pc)];
         jump(operand, flag, pc);
     }
     else if(*idx == "JC")
     {
-        operand = memory[incrementProgramCounter(pc)];
         jumpCarry(operand, flag, pc);
     }
     else if(*idx == "JNC")
     {
-        operand = memory[incrementProgramCounter(pc)];
         jumpNotCarry(operand, flag, pc);
     }
     else if(*idx == "JZ")
     {
-        operand = memory[incrementProgramCounter(pc)];
         jumpZero(operand, flag, pc);
     }
     else if(*idx == "JNZ")
     {
-        operand = memory[incrementProgramCounter(pc)];
         jumpNotZero(operand, flag, pc);
     }
 }
