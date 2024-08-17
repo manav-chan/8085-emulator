@@ -142,11 +142,6 @@ class CPU
                 }
                 else if(find(branching_instr.begin(), branching_instr.end(), opcode) != branching_instr.end())
                 {
-                    // for(auto x: memory)
-                    // {
-                    //     cout<<x.first<<" : "<<x.second<<endl;
-                    // }
-                    // exit(0);
                     executeBranchingInstr(opcode, operand, flag, memory, pc);
                 }
             }
