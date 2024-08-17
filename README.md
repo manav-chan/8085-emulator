@@ -3,7 +3,7 @@
 
 ## Introduction
 Implemented the following instructions:
-1. **(Load and Store** - MOV, MVI, LXI, LDA, STA, LHLD, SHLD, STAX, XCHG
+1. **Load and Store** - MOV, MVI, LXI, LDA, STA, LHLD, SHLD, STAX, XCHG
 2. **Arithmetic** - ADD, ADI, SUB, INR, DCR, INX, DCX, DAD, SUI
 3. **Branching** - JMP, JC, JNC, JZ, JNZ
 - Also implemented an additional SET command to set data into memory locations. Example usage:
