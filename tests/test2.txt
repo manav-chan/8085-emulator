@@ -1,0 +1,9 @@
+// Add 2 8-bit numbers
+SET 2050 1A
+SET 2052 03
+LDA 2050
+MOV B,A
+LDA 2052
+ADD B
+STA 3050
+HLT

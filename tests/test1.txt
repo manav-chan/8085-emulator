@@ -1,3 +1,4 @@
+// Swap 2 8-bit numbers at different memory locations
 SET 2050 AA
 SET 3050 BB
 LDA 2050
