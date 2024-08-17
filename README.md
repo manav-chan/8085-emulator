@@ -42,4 +42,4 @@ make
 
 ## Examples
 - Program to swap numbers at 2 different memory locations.
-<img align="left" src="https://github.com/user-attachments/assets/d8a95acd-ae69-43e6-b7a7-9318e63f934a">
+<img align="left" src="https://github.com/user-attachments/assets/4ad532bd-754a-4757-964c-45370be4e044">
